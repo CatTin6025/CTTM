@@ -38,3 +38,52 @@ main {
     margin: 1rem;
     padding: 1rem;
 }
+
+.h2 {
+    font-size: 2rem;
+}
+
+.greet {
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 1rem;
+}
+
+.info-content {
+    margin-top: 15px;
+    margin-bottom: 21px;
+}
+
+.title {
+    display: flex;
+    gap: 1rem;
+}
+
+.title * {
+    border: solid;
+    border-radius: 32px;
+    padding: 1px 12px;
+}
+
+.link img {
+    display: inline-box;
+    padding: 0 8px;
+    margin-top: 2rem;
+    width: 35px;
+    transition: transform 0.7s ease-in-out;
+}
+
+.link img:hover {
+    transform: scale(1.5);
+    transition: transform 0.05s ease-in-out;
+}
+
+.link .mail-c {
+    width: 40px;
+}
+
+.journey {
+    text-align: center;
+}
