@@ -25,6 +25,12 @@
     margin-left: 2rem;
 }
 
+@media (max-width: 768px) {
+    .page_current {
+        margin-left: 0;
+    }
+}
+
 .page_current .page:not(.active) {
     display: none;
 }

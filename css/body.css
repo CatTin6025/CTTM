@@ -9,10 +9,9 @@ section {
 }
 
 .page_about .profile_picture {
-    height: 70%;
-    width: auto;
+    width: 35%;
+    height: auto;
     border-radius: 40px;
-
     user-select: none;
 }
 
@@ -81,6 +80,23 @@ section {
     display: block;
 }
 
+@media (max-width: 768px) {
+    .page_about {
+        flex-direction: column; /* Chuyển thành xếp dọc trên điện thoại */
+        align-items: center;
+    }
+
+    .page_about .profile_picture {
+        width: 70%;            /* Trên điện thoại cho ảnh to hơn chút cho dễ nhìn */
+        max-width: 280px;      /* Không cho vượt quá 280px */
+        margin-bottom: 1.5rem;
+    }
+
+    .page_about .introduce {
+        margin-left: 0;        /* Bỏ margin-left 10% trên di động để chữ cân giữa */
+    }
+}
+
 /** PAGE 2 **/
 
 .page_journey {
@@ -97,4 +113,10 @@ section {
 
 .card h3 {
     margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .page_journey {
+        font-size: inherit;
+    }
 }
