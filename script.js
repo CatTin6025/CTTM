@@ -1,14 +1,15 @@
-function toggle_menu(element) {
-    element.classList.toggle("change");
+const pages = document.querySelectorAll(".page");
 
-    document
-    .querySelector(".menu-content")
-    .classList.toggle("show");
+const currentPage = location.pathname
+    .split("/")
+    .pop()
+    .replace(".html", "");
 
-    document
-    .querySelector("main")
-    .classList.toggle("blur");
-}
-function change_theme() {
-    document.documentElement.classList.toggle("invert");
-}
+pages.forEach(page => {
+    const name = page.textContent.trim().toLowerCase();
+
+    page.classList.toggle(
+        "active",
+        name === currentPage
+    );
+});

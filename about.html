@@ -2,69 +2,113 @@
 <html lang="en">
     <head>
         <title>cttm</title>
+
+        <link rel="stylesheet" href="css/general.css">
         <link rel="stylesheet" href="css/header.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/body.css">
     </head>
+
     <body>
+        <!-- TODO: Script -->
         <script src="script.js"></script>
 
-        <header>
-            <div class="menu-bar">
-                <span class="nav">About</span>
-                <span class="nav-underli"></span>
+        <!-- Navigation bar -->
+        <div class="on_top">
 
-                <button class="dark-mode-button" onclick="change_theme()">Dark</button> 
+            <!-- Top Left -->
+            <div class="page_current">
+                <p class="page active">About</p>
+                <p class="page">Projects</p>
 
-                <div class="menu-toggle" onclick="toggle_menu(this)">
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
-                </div>
-                <nav class="menu-content">
-                    <a href="about.html">About</a>
-                    <a href="projects.html">Projects</a>
-                </nav>
+                <div class="page_underline"></div>
             </div>
-        </header>
-        <main>
-            <div class="page intro" style="display:flex">
-                <div class="avatar" style="flex-basis:40%"></div>
 
-                <div class="info" style="flex-basis:60%">
-                    <h2 class="greet">Hi, ...</h2>
-                    <p class="info-content">...This is something about me...</p>
+            <!-- TODO: Top Right-->
+            <div class="menu">
+                <div class="burger_menu">
+                    <div class="bar_1"></div>
+                    <div class="bar_2"></div>
+                    <div class="bar_3"></div>
+                </div>
 
-                    <div class="title">
-                        <span>LHP</span>
-                        <span>IT Specialist</span>
+                <div class="menu_content">
+                    <p>About</p>
+                    <p>Projects</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page Content -->
+        <section class="page_about">
+            <!-- Profile Picture -->
+            <img class="profile_picture" src="assets/icon/profile.jpg" alt="image">
+
+            <!-- Introduce -->
+            <div class="introduce">
+                <div class="info">
+                    <h1 class="greet">Hi, what's shaking?</h1>
+                    <p class="content">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                        Stormi is a dog. She is dark grey and has long legs.
+                        Her eyes are expressive and are able to let her humans know what she is thinking. 
+                        Her tongue is long, pink, and wet. 
+                        Her long legs allow her to sprint after other dogs, people or bunnies. 
+                        She can be a good dog, but also very bad. 
+                        Her tail wags when happy or excited and hides between her back legs when she is bad. 
+                        Stormi is a dog I love.</p>
+                </div>
+
+                <!--  Tags -->
+                <div class="title">
+                    <p>LHP</p>
+                    <p>IT Specialist</p>
+                </div>
+
+                <!-- Contact Link -->
+                <div class="link">
+                    <!-- Mail -->
+                    <div class="image_box">
+                        <img class="mail_closed" src="assets/icon/mail-close.svg" alt="mail">
+                        <div class="text_to_copy">cattintruongminh@gmail.com</div>
                     </div>
 
-                    <div class="link">
-                        <img class="mail-c" src="assets/icon/mail-close.svg" alt="mail">
+                    <!-- Github -->
+                    <a href="https://github.com/CatTin6025" target="_blanh">
                         <img class="github" src="assets/icon/github.svg" alt="gitHub">
+                    </a>
+
+                    <!-- Twitter -->
+                    <a href="https://x.com/bacon6025" target="_blanh">
                         <img class="twitter" src="assets/icon/twitter.svg" alt="twitter">
+                    </a>
+
+                    <!-- Discord -->
+                    <div class="image_box">
                         <img class="discord" src="assets/icon/discord.svg" alt="discord">
+                        <div class="text_to_copy">cat.tao</cat></div>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <div class="page journey">
-                <h2 class="subtitle">My Journey</h2>
+        <!-- TODO: Page Journey -->
+        <section class="page_journey">
+            <h2 class="subtitle">My Journey</h2>
 
-                <article class="card">
-                    <h3>End of 2024:</h3>
-                    <p>Achieved top rank of district-level CP (competitive programming) contest.</p>
-                </article>
-                <article class="card">
-                    <h3>Middle of 2025:</h3>
-                    <p>Achieved 3rd prize in Ho Chi Minh City-level CP contest.</p>
-                    <p>Enrolled in the infamous Le Hong Phong High School for the Gifted, majoring in IT.</p>
-                </article>
-                <article class="card">
-                    <h3>End of 2026:</h3>
-                    <p>Become normal.</p>
-                </article>
-            </div>
-        </main>
+            <article class="card card_1">
+                <h3>End of 2024:</h3>
+                <p>Achieved top rank of district-level CP (competitive programming) contest.</p>
+            </article>
+            <article class="card card_2">
+                <h3>Middle of 2025:</h3>
+                <p>Achieved 3rd prize in Ho Chi Minh City-level CP contest.</p>
+                <p>Enrolled in the infamous Le Hong Phong High School for the Gifted, majoring in IT.</p>
+            </article>
+            <article class="card card_3">
+                <h3>End of 2026:</h3>
+                <p>Become normal.</p>
+            </article>
+        </section>
+
+
     </body>
 </html>

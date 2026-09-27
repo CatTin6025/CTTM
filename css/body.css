@@ -1,0 +1,100 @@
+section {
+    padding-top: 60px;
+}
+
+/** PAGE 1 **/
+
+.page_about {
+    display: flex;
+}
+
+.page_about .profile_picture {
+    height: 70%;
+    width: auto;
+    border-radius: 40px;
+
+    user-select: none;
+}
+
+.page_about .introduce {
+    margin-left: 10%;
+}
+
+.info {
+    max-width: 500px;
+    width: 100%;
+}
+
+.info .greet {
+    margin-bottom: 1rem;
+}
+
+.info .content {
+    text-align: justify;
+}
+
+.title {
+    display: flex;
+}
+
+.title * {
+    border: 2px solid #000;
+    border-radius: 20px;
+    margin: 1rem 1rem 0.5rem 0;
+    padding: 2px 1rem;
+
+    user-select: none;
+}
+
+.page_about .link img {
+    height: 2rem;
+    width: auto;
+    cursor: pointer;
+
+    user-select: none;
+}
+
+.page_about .link {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.image_box {
+    position: relative;
+    display: inline_block;
+}
+
+.image_box .text_to_copy {
+    display: none;
+    position: absolute;
+    cursor: text;
+
+    bottom: -1rem;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px;
+}
+
+.image_box:hover .text_to_copy {
+    display: block;
+}
+
+/** PAGE 2 **/
+
+.page_journey {
+    font-size: 24px;
+}
+
+.subtitle {
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    margin-bottom: 0.25rem;
+}
+
+.card h3 {
+    margin-top: 0.5rem;
+}

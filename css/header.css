@@ -1,137 +1,48 @@
-html {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 18px;
-    transition: 0.4s;
-}
-
-body {
-    margin: 0;
-}
-
-header {
-    height: 84px;
-}
-
-main {
+.on_top {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: calc(100vh - 84px);
-
-    overflow-y: auto;
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
-
-    transition: 0.3s;
-}
-
-.page {
-    width: 100%;
-    height: calc(100vh - 84px);
-
-    scroll-snap-align: start;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    color: white;
-    font-family: Arial, sans-serif;
-}
-
-html.invert {
-    background: #111;
-    color: white;
-}
-
-html.invert .link img {
-    filter: invert(100%);
-}
-
-html.invert .bar1,
-html.invert .bar2, 
-html.invert .bar3, 
-html.invert .nav-underli {
+    box-sizing: border-box;
+    z-index: 9999;
     background-color: white;
-}
 
-.dark-mode-button {
-    position: absolute;
-    font-size: 1rem;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 15px 20px; 
+    height: 60px; 
+    display: flex; 
     font-weight: bold;
-    right: 4rem;
-    top: 6px;
-    cursor: pointer;
 
-    background-color: inherit;
-    color: inherit;
-
-    border: solid;
-    border-radius: 16px;
-    padding: 2px 15px;
+    user-select: none;
 }
 
-.menu-bar {
+.page_current {
+    font-size: 1.2rem;
+    place-items: center;
     position: relative;
-    font-weight: bold;
-    margin: 0px 38px;
-    padding: 10px 22.5px;
-    align-items: center;
+    pointer-events: none;
+    margin-left: 2rem;
 }
 
-.nav-underli {
-    position: absolute;
-    width: 30px;
-    height: 2px;
-    background-color: #333;
-    top: 32px;
-    left: 35px;
-}
-
-.menu-content {
+.page_current .page:not(.active) {
     display: none;
-    flex-direction: column;
-    gap: 15px;
-    position: absolute;
-    right: 5%;
-    top: 200%;
 }
 
-.menu-content * {
-    color: black;
-    text-decoration: none;
-}
-
-.menu-content.show {
-    display: flex;
-}
-
-.menu-toggle {
-    display: inline-block;
-    position: absolute;
-    right: 0px;
-    top: 0px;
+.menu {
     cursor: pointer;
-    padding: 0.5rem 0.6rem;
 }
 
-.bar1, .bar2, .bar3 {
-    width: 25px;
-    height: 3px;
-    background-color: #333;
-    margin: 4px 0;
-    transition: 0.4s;
+.bar_1,
+.bar_2,
+.bar_3 {
+    border: none;
+    height: 2px;
+    width: 1rem;
+    margin-bottom: 4px;
+    background-color: black;
 }
 
-.change .bar1 {
-    transform: translate(0, 7px) rotate(-45deg);
-}
-.change .bar2 {
-    opacity: 0;
-}
-.change .bar3 {
-    transform: translate(0, -7px) rotate(45deg);
-}
-
-main.blur {
-    filter: blur(4px);
+.menu_content {
+    display: none;
 }
